@@ -1,0 +1,484 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+@font-face{
+    font-family: 'Golos';
+    src:url('/fonts/Golos-Text_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Forum';
+    src: url('/fonts/rolexfonts/Forum.ttf')format('truetype');
+}
+body{
+    background-color: white;
+    overflow-x: hidden;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Golos', sans-serif;
+}
+.container{
+    width: 1920px;
+}
+
+.half_background{
+    border:1px solid grey;
+    /* background:black; */
+    background: linear-gradient(115.24deg, rgba(34, 34, 34, 0.98) -10.1%, rgba(14, 14, 14, 0.98) 99.97%);
+    width: 50%;
+    height: 1300px;
+    z-index: -5;
+    content: '';
+    position: absolute; top: 0; left: 0;
+}
+
+.header{
+    width: 1920px;
+    display: flex;
+    /* border: 2px solid blue; */
+    align-items: center;
+    margin-top: 44px;
+}
+.header_logo{
+    display: flex;
+    align-items:center;
+}
+.img_logo{
+    margin-left: -21px;
+}
+.rolex{
+    margin-left:18px ;
+    font-family: 'Rolex';
+    src:url('/fonts/rolexfonts/RoundslabSerif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    color:white;
+    font-size: 40px;
+    font-weight: 600;
+    
+}
+.header_phone{
+    margin-left: 350px;
+    left:100px;
+    color:black;
+    font-family: 'Golos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+
+
+.white{
+    color:white;
+    text-decoration: none;
+}
+.black{
+    color:black;
+    text-decoration: none;
+}
+
+.header_menu{
+    margin-left: 300px;
+    font-family: "Golos";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+color: #FFFFFF;
+}
+.header_menu a{
+    display: inline-block;
+    padding-right: 68px;
+}
+
+.borderUpHeaderBlack{
+    width: 930px;
+    height: 0px;
+    left: 63px;
+    top: 125px;
+    margin-right:0px;
+    border: 1px solid #2D2D2D;
+}
+
+.borderUpHeaderWhite{
+    width: 930px;
+    height: 0px;
+    left: 960px;
+    top: 125px;
+    margin-left: 0px;
+    opacity: 0.14;
+    border: 1px solid #000000;
+}
+
+.borderUnderHeader{
+    margin-top: 52px;
+    display: flex;
+    text-align: center;
+}
+
+.s{
+    z-index: -4;
+    text-align: center;
+    margin-top: 56px;
+}
+
+.clock{
+    z-index: -3;
+    margin-top: -680px;
+    text-align: center;
+}
+
+.work{
+    z-index: 1;
+    font-family: 'Golos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.33em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 473px;
+}
+.partner{
+    font-family: 'Golos';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+letter-spacing: 0.33em;
+text-transform: uppercase;
+margin-left: 149px;
+
+color: #000000;
+}
+
+
+.rolexbrand{
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 108.797px;
+    line-height: 120px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-left: 67px;
+}
+
+.littleName{
+    display: flex;
+    margin-top: -380px;
+}
+.rolexname{
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 108.797px;
+    line-height: 120px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-left: 469px;
+
+color: #FFFFFF;
+}
+
+.bigName{
+    display: flex;
+}
+
+.redButton{
+    width: 407px;
+    height: 103px;
+    background: #C41435;
+    border-radius: 71px;
+    
+    display: flex;
+    text-align: center;
+    margin-top: 450px;
+    margin-bottom: 96px;
+    
+}
+
+.price{
+    font-family: 'Golos';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 20px;
+letter-spacing: 0.33em;
+text-transform: uppercase;
+margin-top: 35px;
+color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+#menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 1700px !important;
+  }
+  .menu__btn {
+    position: fixed;
+    top: 86px;
+    left: 1888px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    z-index: 99;
+    top: 140px;
+    left: 100%;
+    width: 300px;
+    height: 200px;
+    margin: 0;
+    padding: 80px 0;
+    padding-top:50px;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
+
+  .collection{
+    color: black;
+  }
+
+  .collection{
+    width: 1920px;
+    margin-top: 200px;
+  }
+
+  .border__left{
+    width: 575px;
+    height: 0px;
+
+    opacity: 0.14;
+    border: 1px solid #000000;
+}
+  .border__right{
+    width: 575px;
+    height: 0px;
+
+    opacity: 0.14;
+    border: 1px solid #000000;
+  }
+
+  .collection__title{
+    display: flex;
+    align-items:center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .collection__name{
+    font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 35px;
+letter-spacing: 0.33em;
+text-transform: uppercase;
+
+color: #121212;
+}
+
+.clock__one{
+    vertical-align: middle;
+    display: table-cell;
+    margin-left: 300px;
+}
+
+.clock__three{
+    margin-right: 300px;
+}
+
+.collection__clock{
+    align-items:center;
+    display: flex;
+    margin-bottom: 129px;
+}
+.clock__title{
+    font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 27px;
+line-height: 30px;
+/* identical to box height */
+text-align: center;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.clock__subtitle{
+    font-family: 'Golos';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 17px;
+text-align: center;
+letter-spacing: 0.26em;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+
+.about{
+    height: 1130px;
+}
+
+.about__backg{
+    position: absolute;
+    width: 464px;
+height: 1130px;
+z-index: -1;
+margin-left: 1550px;
+background: linear-gradient(115.24deg, rgba(34, 34, 34, 0.98) -10.1%, rgba(14, 14, 14, 0.98) 99.97%);
+}
+.aboutInformation{
+    display: flex;
+    align-items:center;
+    margin-top: 200px;
+}
+
+.about__title{
+    font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 65px;
+line-height: 72px;
+/* identical to box height */
+margin-bottom: 67px;
+letter-spacing: 0.1em;
+
+color: #0B0B0B;
+}
+
+.about__littleText{
+    font-family: 'Golos';
+font-style: normal;
+font-weight: 400;
+font-size: 27px;
+line-height: 125%;
+width: 1057px;
+margin-top: 52px;
+margin-bottom: 110px;
+/* or 34px */
+
+letter-spacing: -0.015em;
+
+color: #4E4E4E;
+}
+
+.about__border{
+    width: 87px;
+height: 0px;
+margin-left: 0px;
+border: 1px solid #000000;
+}
+
+.about__button{
+    width: 201px;
+height: 68px;
+border: 2px solid #000000;
+background-color:white;
+
+font-family: 'Golos';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 125%;
+/* identical to box height, or 30px */
+
+letter-spacing: -0.015em;
+
+color: #000000;
+}
+
+
+.about__text{
+    margin-top: 275px;
+}
+.about__img{
+    margin-top: 275px;
+}
+
+
+::-webkit-scrollbar{
+    width: 9px;
+    height: 9px;
+}
+::-webkit-scrollbar-thumb{
+    /* background:linear-gradient(to bottom, #ff850a,#3e09ff); */
+    background:rgb(255, 255, 255);
+    border-radius:10px;
+}
+::-webkit-scrollbar-track{
+    background:#474747;
+}
+
